@@ -6,7 +6,7 @@ warning in VSCode,change the css.lint.unknownAtRules setting to ignore. */
   --text: #87c7e4;
   --card: #202426;
   --blue: #6681c5;
-  --bg: linear-gradient(135deg, #382653, #6681c5);
+  --bg: linear-gradient(#382653, #6681c5);
 
   --delay: 200ms;
   --rotate-0: rotateY(0deg);
@@ -95,6 +95,7 @@ button {
   width: var(--card-width);
   animation: var(--card-enter);
   border-radius: var(--radius);
+  z-index: -1;
 }
 .card img {
   width: 100%;
@@ -147,7 +148,7 @@ button {
 
   header {
     left: 0;
-    bottom: 0;
+    top: 0;
     margin: auto;
     position: fixed;
     border-radius: 0;

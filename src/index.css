@@ -1,14 +1,12 @@
-
-   
 /* Tip: If you see an "Unknown at rule @import-normalize css(unknownAtRules)"
 warning in VSCode,change the css.lint.unknownAtRules setting to ignore. */
 @import-normalize;
 
 :root {
-  --text: #f66936;
+  --text: #87c7e4;
   --card: #202426;
-  --orange: #ffa200;
-  --bg: linear-gradient(135deg, #fc2473, #f66936);
+  --orange: #6681c5;
+  --bg: linear-gradient(135deg, #382653, #6681c5);
 
   --delay: 200ms;
   --rotate-0: rotateY(0deg);
@@ -101,7 +99,12 @@ button {
 .card img {
   width: 100%;
 }
-.card-face,
+.card-face {
+  background: var(--card);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
 .card-back {
   padding: 1rem;
   background: var(--card);
